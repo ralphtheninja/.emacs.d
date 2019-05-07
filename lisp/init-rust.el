@@ -27,5 +27,6 @@
 	     (setq racer-rust-src-path (concat (getenv "HOME") "/src/rust/rust/src"))
              (local-set-key (kbd "TAB") #'company-indent-or-complete-common)
 	     (electric-pair-mode 1)))
+(setq rust-format-on-save t)
 
 (provide 'init-rust)
