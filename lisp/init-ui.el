@@ -59,6 +59,10 @@
 (autoload 'markdown-mode "markdown-mode" "Major mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
+;; Buffer names with folders -> Get rid of buffers named foo<1> etc
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'reverse)
+
 (provide 'init-ui)
 ;;; init-ui.el ends here
 
