@@ -46,6 +46,10 @@
 )
 (global-set-key (kbd "C-x 4") 'split-windows-into-three-vertical)
 
+;; line and column mode
+(setq line-number-mode t)
+(setq column-number-mode t)
+
 (provide 'init-ui)
 ;;; init-ui.el ends here
 
