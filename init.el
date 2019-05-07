@@ -17,9 +17,11 @@
 (require 'init-misc)
 (require 'init-company-mode)
 (require 'init-rust)
+(require 'init-comment-out-line)
 
 ;; TODO
 ;; Get markdown working
+;; 
 
 (provide 'init)
 (custom-set-variables
