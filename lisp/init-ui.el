@@ -50,6 +50,11 @@
 (setq line-number-mode t)
 (setq column-number-mode t)
 
+;; Highlight trailing whitespace! Toggle with F9
+(require 'highlight-chars)
+(global-set-key (kbd "<f9>") 'hc-toggle-highlight-trailing-whitespace)
+(hc-toggle-highlight-trailing-whitespace)
+
 (provide 'init-ui)
 ;;; init-ui.el ends here
 
