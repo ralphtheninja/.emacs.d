@@ -18,6 +18,9 @@
 (require 'init-company-mode)
 (require 'init-rust)
 
+;; TODO
+;; Get markdown working
+
 (provide 'init)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
