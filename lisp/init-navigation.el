@@ -50,6 +50,9 @@
 ;; Shows a list of buffers
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
+;; Much better than C-x C-b
+(global-set-key "\C-xl" 'electric-buffer-list)
+
 ;; awesome goto line that shows the line numbers to the left
 ;; http://whattheemacsd.com/key-bindings.el-01.html
 (global-set-key [remap goto-line] 'goto-line-with-feedback)
