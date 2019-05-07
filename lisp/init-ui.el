@@ -55,6 +55,10 @@
 (global-set-key (kbd "<f9>") 'hc-toggle-highlight-trailing-whitespace)
 (hc-toggle-highlight-trailing-whitespace)
 
+(require-package 'markdown-mode)
+(autoload 'markdown-mode "markdown-mode" "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
 (provide 'init-ui)
 ;;; init-ui.el ends here
 
