@@ -3,7 +3,7 @@
 (require 'init-elpa)
 
 ;;; Code:
-(require-package 'atom-one-dark-theme)
+;; (require-package 'atom-one-dark-theme)
 (require-package 'golden-ratio)
 
 ;;(require 'golden-ratio)
@@ -25,7 +25,7 @@
       apropos-do-all t
       mouse-yank-at-point t)
 
-(load-theme 'atom-one-dark t)
+;; (load-theme 'atom-one-dark t)
 
 (blink-cursor-mode 0)
 (setq-default cursor-type 'bar)
