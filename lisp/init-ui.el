@@ -3,11 +3,6 @@
 (require 'init-elpa)
 
 ;;; Code:
-;; (require-package 'atom-one-dark-theme)
-(require-package 'golden-ratio)
-
-;;(require 'golden-ratio)
-
 (setq inhibit-startup-message t)
 (menu-bar-mode -1)
 (when (fboundp 'tool-bar-mode)
@@ -25,14 +20,31 @@
       apropos-do-all t
       mouse-yank-at-point t)
 
-;; (load-theme 'atom-one-dark t)
-
 (blink-cursor-mode 0)
 (setq-default cursor-type 'bar)
 (set-cursor-color "#cccccc")
 (setq ring-bell-function 'ignore)
 
-;;(golden-ratio-mode 1)
+;; Split the current buffer into four evenly wide vertical buffers
+(defun split-windows-into-four-vertical ()
+  (interactive)
+  (delete-other-windows)
+  (command-execute 'split-window-right)
+  (command-execute 'split-window-right)
+  (command-execute 'split-window-right)
+  (command-execute 'balance-windows)
+)
+(global-set-key (kbd "C-x 6") 'split-windows-into-four-vertical)
+
+;; Split the current buffer into three evenly wide vertical buffers
+(defun split-windows-into-three-vertical ()
+  (interactive)
+  (delete-other-windows)
+  (command-execute 'split-window-right)
+  (command-execute 'split-window-right)
+  (command-execute 'balance-windows)
+)
+(global-set-key (kbd "C-x 4") 'split-windows-into-three-vertical)
 
 (provide 'init-ui)
 ;;; init-ui.el ends here
