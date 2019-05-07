@@ -12,12 +12,8 @@
 	(package-refresh-contents))
       (package-install package))))
 
-(package-initialize)
 (add-to-list 'package-archives
 	     '("melpa-stable" . "http://stable.melpa.org/packages/") t)
-(package-refresh-contents)
-
-
 
 (provide 'init-elpa)
 
