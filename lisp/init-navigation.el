@@ -3,7 +3,7 @@
 (require 'ido)
 (require 'recentf)
 ;; https://github.com/DarwinAwardWinner/ido-completing-read-plus
-(require-package 'ido-ubiquitous)
+(require-package 'ido-completing-read+)
 ;; https://github.com/nonsequitur/smex
 (require-package 'smex)
 ;; https://github.com/bbatsov/projectile
