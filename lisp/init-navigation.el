@@ -15,6 +15,29 @@
 (setq recentf-max-menu-items 40)
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 
+;; 'suspend-frame is usually bound ot C-z
+(global-set-key "\C-c\C-z" 'suspend-frame)
+
+(defun scroll-one-line-up (amount)
+  "Scroll text of current window upward one line"
+  (interactive "p")
+  (scroll-up amount))
+
+(defun scroll-one-line-down (amount)
+  "Scroll text of current window downward one line"
+  (interactive "p")
+  (scroll-down amount))
+
+;; Moving one line up and down
+(global-set-key "\C-z" 'scroll-one-line-up)
+(global-set-key "\ez" 'scroll-one-line-down)
+
+;; Opposite of C-x o
+(defun prev-window ()
+  (interactive)
+  (other-window -1))
+(define-key global-map (kbd "C-x p") 'prev-window)
+
 (ido-mode 1)
 (ido-everywhere 1)
 (setq ido-enable-flex-matching t)
