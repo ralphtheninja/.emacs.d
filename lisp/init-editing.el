@@ -20,6 +20,12 @@
 
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
+;; Pull up the line below and join with the current line
+(global-set-key (kbd "M-j")
+                (lambda ()
+                  (interactive)
+                  (join-line -1)))
+
 ;; When you visit a file, point goes to the last place where it
 ;; was when you previously visited the same file.
 ;; http://www.emacswiki.org/emacs/SavePlace
