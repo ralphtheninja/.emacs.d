@@ -17,11 +17,8 @@
 (require 'init-misc)
 (require 'init-company-mode)
 (require 'init-rust)
+(require 'init-js2)
 (require 'init-comment-out-line)
-
-;; TODO
-;; Add js2-mode
-;; Add jshint-mode
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
