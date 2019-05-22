@@ -20,6 +20,9 @@
 
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
+;; Use spaces and not fecking tabs when auto indenting!
+(setq-default indent-tabs-mode nil)
+
 ;; Pull up the line below and join with the current line
 (global-set-key (kbd "M-j")
                 (lambda ()
