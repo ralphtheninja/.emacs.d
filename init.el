@@ -14,6 +14,7 @@
 (require 'init-ui)
 (require 'init-editing)
 (require 'init-navigation)
+(require 'init-helm)
 (require 'init-misc)
 (require 'init-company-mode)
 (require 'init-rust)
