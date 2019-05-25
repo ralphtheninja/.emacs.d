@@ -8,6 +8,8 @@
 (setq-default js2-strict-inconsistent-return-warning nil)
 (setq-default js2-idle-timer-delay 0.1)
 
+(setq-default js-switch-indent-offset 2)
+
 ;; Don't redefine M-j for me please, js2-mode
 (define-key js2-mode-map (kbd "M-j") nil)
 
