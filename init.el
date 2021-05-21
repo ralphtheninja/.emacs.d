@@ -1,6 +1,11 @@
+;;; package -- summary
+;;; Commentary:
+
 ;; Originally based on https://manenko.com/2016/08/03/setup-emacs-for-rust-development.html
 ;; More on loading scripts: https://www.emacswiki.org/emacs/LoadingLispFiles
 
+
+;;; Code:
 
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
@@ -17,7 +22,6 @@
 (require 'init-helm)
 (require 'init-misc)
 (require 'init-company-mode)
-(require 'init-rust)
 (require 'init-js2)
 (require 'init-comment-out-line)
 
@@ -36,7 +40,7 @@
     ("59171e7f5270c0f8c28721bb96ae56d35f38a0d86da35eab4001aebbd99271a8" default)))
  '(package-selected-packages
    (quote
-    (flycheck-rust racer company projectile smex ido-completing-read+ flycheck rainbow-delimiters golden-ratio atom-one-dark-theme))))
+    (company projectile smex ido-completing-read+ flycheck rainbow-delimiters golden-ratio atom-one-dark-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
